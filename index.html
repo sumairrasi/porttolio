@@ -1,315 +1,934 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>My Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<title>Sumair Rasi — ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1>Hi there, <strong>I 'm Sumair Rasi</strong><br />
-					Jr. Machine learning Engineer<br />
-					@GBS-PLUS</h1>
-				</div>
-				<!-- Skills Section -->
-				
+/* ── TOKENS ─────────────────────────────────────────────── */
+:root {
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --border: #e6e3da;
+  --border-light: #f0ede5;
+  --ink: #18181b;
+  --ink-muted: #71717a;
+  --ink-faint: #a1a1aa;
+  --accent: #1a56db;
+  --accent-soft: #eff4ff;
+  --accent-mid: #93b4f8;
+  --gold: #d97706;
+  --gold-soft: #fef3c7;
+  --green: #059669;
+  --green-soft: #d1fae5;
+  --font-head: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Fira Mono', monospace;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
 
-			</header>
+/* ── BASE ───────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  display: flex;
+  min-height: 100vh;
+}
+a { color: inherit; text-decoration: none; }
 
-		<!-- Main -->
-			<div id="main">
+/* ── SIDEBAR ────────────────────────────────────────────── */
+#sidebar {
+  width: 268px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.8rem;
+  overflow-y: auto;
+  z-index: 10;
+}
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About Me</h2>
-						</header>
-						<p>My name is Sumair Rasi, and I am an expert in Machine Learning (ML) and Deep Learning (DL), dedicated to leveraging advanced technologies for optimal results. With a profound passion for the realms of ML, DL, and MLOps, I possess a comprehensive understanding of algorithms, frameworks, and techniques that empower me to develop intelligent systems.
+.avatar {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--border);
+  margin-bottom: 1.2rem;
+  background: #eee;
+  flex-shrink: 0;
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
 
-							My expertise enables me to analyze vast datasets and deliver accurate predictions, driving data-driven decision-making and innovation. I continuously strive to push the boundaries of technology and explore new frontiers in the field of artificial intelligence.</p>
-						<ul class="actions">
-							<li><a href="https://drive.google.com/file/d/1GuLNOZ6ECzDGLd4hTGsEWn2cPr3sH44d/view?usp=drive_link" target="_blank" class="button">View Resume</a></li>
-						</ul>
-					</section>
-					<!-- Skills Section -->
-					<section id="skills">
-						<h2>Skills</h2>
-						<div class="skills-list">
-							<div class="skill-item">
-								<a href="#" class="button">Python
-									<div class="progress-bar">
-										<div class="progress" style="width: 70%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">REST api development
-									<div class="progress-bar">
-										<div class="progress" style="width: 85%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">LLm application development
-									<div class="progress-bar">
-										<div class="progress" style="width: 75%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">Classical Machine Learning
-									<div class="progress-bar">
-										<div class="progress" style="width: 80%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">Backend Engineering
-									<div class="progress-bar">
-										<div class="progress" style="width: 70%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">AWS
-									<div class="progress-bar">
-										<div class="progress" style="width: 50%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">Deep Learning
-									<div class="progress-bar">
-										<div class="progress" style="width: 75%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">SQL
-									<div class="progress-bar">
-										<div class="progress" style="width: 60%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">Mongodb
-									<div class="progress-bar">
-										<div class="progress" style="width: 80%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">MLops Engineering
-									<div class="progress-bar">
-										<div class="progress" style="width: 40%;"></div>
-									</div>
-								</a>
-							</div>
-							<div class="skill-item">
-								<a href="#" class="button">Vector Database
-									<div class="progress-bar">
-										<div class="progress" style="width: 80%;"></div>
-									</div>
-								</a>
-							</div>
-						</div>
-					</section>
-					
+.sidebar-name {
+  font-family: var(--font-head);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -.01em;
+}
+.sidebar-role {
+  font-size: .75rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: .2rem;
+  font-family: var(--font-mono);
+}
+.sidebar-company { font-size: .73rem; color: var(--ink-faint); margin-top: .1rem; }
 
-				<!-- Two -->
-				<section id="twos">
-					<h2>Recent Work</h2>
-					<div class="row">
-						<article class="col-6 col-12-xsmall work-item">
-							<a href="https://github.com/sumairrasi/Research-Bot" target="_blank" class="image fit thumb">
-								<img src="images/thumbs/chatbot-drupal.webp" alt="" />
-							</a>
-							<h3><a href="https://github.com/sumairrasi/Research-Bot" target="_blank">Research-Bot</a></h3>
-							<p>The Research Assistant Chatbot is an AI-powered platform designed to facilitate interactive learning and teaching for students and teachers. Leveraging LangChain agents for advanced query handling and Redis for conversational history, the chatbot provides context-aware and seamless interactions. It integrates with external resources like Wikipedia and ArXiv to retrieve information when the internal knowledge base is insufficient. Teachers can enrich the knowledge base by uploading research papers and curated website links, while students can explore topics interactively through dynamic Q&A sessions. This project combines cutting-edge technologies like Python, SQLite Cloud, and Redis to create a robust, scalable, and intuitive educational tool.
-							</p>
-						</article>
+.sidebar-divider { height: 1px; background: var(--border-light); margin: 1.6rem 0 1.1rem; }
 
-						<article class="col-6 col-12-xsmall work-item">
-							<a href="https://github.com/sumairrasi/Mental-Health-Assesment" target="_blank" class="image fit thumb">
-								<img src="images/thumbs/Mental-Health.jpg" alt="" />
-							</a>
-							<h3><a href="https://github.com/sumairrasi/Mental-Health-Assesment" target="_blank">Mental-health-Assesment using MLOPS</a></h3>
-							<p>The "Mental Health Assessment" project leverages machine learning and MLOps to detect, analyze, and address mental health challenges in the workplace. Designed to provide early warnings for potential issues, this system analyzes contributing factors and suggests personalized interventions, promoting a healthier work environment.
+.sidebar-nav { display: flex; flex-direction: column; gap: .05rem; }
+.sidebar-nav a {
+  font-size: .81rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  padding: .44rem .65rem;
+  border-radius: var(--radius-sm);
+  transition: background .15s, color .15s;
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+}
+.sidebar-nav a i { width: 14px; text-align: center; font-size: .78rem; }
+.sidebar-nav a:hover, .sidebar-nav a.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
 
-								Additionally, the project focuses on career optimization by integrating modern data science practices with real-world mental health challenges in a professional setting. I developed this project end-to-end, incorporating MLOps, deploying on Amazon EC2, and using Amazon S3 for storage.
-							</p>
-						</article>
-						<article class="col-6 col-12-xsmall work-item">
-							<a href="https://github.com/sumairrasi/Diary-Farm-production-Forcast" target="_blank" class="image fit thumb">
-								<img src="images/thumbs/diary.jpg" alt="" />
-							</a>
-							<h3><a href="https://github.com/sumairrasi/Diary-Farm-production-Forcast">Diary farm production forcast(MLOPS)</a></h3>
-							<p>This project uses the SARIMAX model to forecast dairy farm production by analyzing historical data and incorporating external factors, with features for data collection, model training, forecasting, and visualization; it was developed end-to-end with CI/CD integration through GitHub Actions.</p>
-						</article>
-						<article class="col-6 col-12-xsmall work-item">
-							<a href="https://github.com/sumairrasi/Sentiment-Analysis-using-Twitter-data" target="_blank" class="image fit thumb">
-								<img src="images/thumbs/sentiment.jpg" alt="" />
-							</a>
-							<h3><a href="https://github.com/sumairrasi/Sentiment-Analysis-using-Twitter-data" target="_blank">Sentiment Analysis of Twitter data using MLOPS</a></h3>
-							<p>This sentiment analysis project leverages a Twitter dataset from Kaggle and utilizes the distilbert-base-uncased model, fine-tuned to accurately classify sentiments (positive, negative, neutral, or irrelevant) in tweets, with key features including tweet text and sentiment labels; I implemented the project end-to-end, covering advanced text classification and deploying with Docker for efficient application management.</p>
-						</article>
-						<!-- <article class="col-6 col-12-xsmall work-item">
-							<a href="link-to-your-page-04" class="image fit thumb">
-								<img src="images/thumbs/04.jpg" alt="" />
-							</a>
-							<h3><a href="link-to-your-page-04">Quam neque phasellus</a></h3>
-							<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-						</article>
-						<article class="col-6 col-12-xsmall work-item">
-							<a href="link-to-your-page-05" class="image fit thumb">
-								<img src="images/thumbs/05.jpg" alt="" />
-							</a>
-							<h3><a href="link-to-your-page-05">Nunc enim commodo aliquet</a></h3>
-							<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-						</article> -->
-						<!-- <article class="col-6 col-12-xsmall work-item">
-							<a href="https://github.com/sumairrasi/Drug-side-effect-classification-Notebook" target="_blank" class="image fit thumb">
-								<img src="images/thumbs/drug_sideeffect_classification.jpeg" alt="" />
-							</a>
-							<h3><a href="https://github.com/sumairrasi/Drug-side-effect-classification-Notebook" target="_blank">Drug side-effect classification</a></h3>
-							<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-						</article> -->
-					</div>
-					<!-- <ul class="actions">
-						<li><a href="full-portfolio-link" class="button">Full Portfolio</a></li>
-					</ul> -->
-				</section>
-				
-				
-				
-					<!-- Certificates Section -->
-					<!-- Certificates Section -->
-					<section id="certificates">
-						<h2>View Certificates</h2>
-						<div class="certificates-list">
-							<div class="certificate-item">
-								<h3>Databases and SQL for Data Science with Python</h3>
-								<p>Issued by IBM - Completed in 2024</p>
-								<a href="https://drive.google.com/file/d/1C_bMBY1kJU-5GB5VzdG2PfsI59UKfR4E/view?usp=sharing" target="_blank">View Certificate</a>
-							</div>
-							<div class="certificate-item">
-								<h3>
-									Django Web Framework</h3>
-								<p>Issued by Meta - Completed in 2024</p>
-								<a href="https://drive.google.com/file/d/1x1WWJTSMSPVED8V-zN9RGC8x_XKblTfh/view?usp=sharing" target="_blank">View Certificate</a>
-							</div>
-							<div class="certificate-item">
-								<h3>Statics Foundation: 3</h3>
-								<p>Issued by Linkedin Learning - Completed in 2022</p>
-								<a href="https://www.linkedin.com/learning/certificates/142bf862ecc7f2580068443aad0d8f1009bbcb8431a8883e36e07c840ead395f" target="_blank">View Certificate</a>
-							</div>
-							<div class="certificate-item">
-								<h3>Machine learning Foundation</h3>
-								<p>Issued by iNeuron - Completed in 2022</p>
-								<a href="https://drive.google.com/file/d/1rdJoGIFH3tWRBXVkW-FWbovrCOVBOQru/view" target="_blank">View Certificate</a>
-							</div>
-							<div class="certificate-item">
-								<h3>Deep learning Foundation</h3>
-								<p>Issued by iNeuron - Completed in 2022</p>
-								<a href="https://drive.google.com/file/d/18qG1xzDrcR0vdZCW9Klhi6SE6-81kFj_/view" target="_blank">View Certificate</a>
-							</div>
+/* status badge */
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1.4rem;
+  padding: .5rem .8rem;
+  background: var(--green-soft);
+  border-radius: 99px;
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--green);
+}
+.status-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; }
+  50% { opacity: .4; }
+}
 
-							<!-- Add more certificates as needed -->
-						</div>
-					</section>
+.sidebar-social {
+  margin-top: auto;
+  padding-top: 2rem;
+  display: flex;
+  gap: .5rem;
+}
+.sidebar-social a {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ink-faint);
+  font-size: .78rem;
+  transition: border-color .2s, color .2s, background .2s;
+}
+.sidebar-social a:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
 
+/* ── MAIN ───────────────────────────────────────────────── */
+#main {
+  margin-left: 268px;
+  flex: 1;
+  padding: 3.2rem 3.5rem;
+  max-width: 1100px;
+}
 
-				<!-- Three -->
-					<section id="three">
-						<h2>Get In Touch</h2>
-						<!-- <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div> -->
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<!-- <li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
-									</li> -->
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=sumairrazi585@gmail.com" target="_blank">Message Me</a>
-									</li>
-								</ul>
-								<a href="https://www.hitwebcounter.com" target="_blank">
-									<img src="https://hitwebcounter.com/counter/counter.php?page=17107810&style=0010&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>       
-							</div>
-						</div>
-						
-					</section>
-					<!-- Certificates Section -->
-					
-				
+/* ── SECTION ────────────────────────────────────────────── */
+.section {
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--border);
+}
+.section:last-child { border-bottom: none; margin-bottom: 0; }
 
-			</div>
+.section-title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
 
-		<!-- Footer -->
-		<<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li>
-						<a href="https://github.com/sumairrasi" class="icon brands fa-github" target="_blank" rel="noopener noreferrer">
-							<span class="label">Github</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/sumairrasi" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer">
-							<span class="label">LinkedIn</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=sumairrazi585@gmail.com" class="icon solid fa-envelope" target="_blank" rel="noopener noreferrer">
-							<span class="label">Email</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="copyright">
-					<!-- <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
-				</ul>
-			</div>
-		</footer>
-		
-		
+/* ── ABOUT ──────────────────────────────────────────────── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 290px;
+  gap: 2.5rem;
+  align-items: start;
+}
+.about-text {
+  font-size: .93rem;
+  line-height: 1.9;
+  color: #52525b;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin-top: 1.4rem;
+  padding: .55rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: background .2s, transform .15s;
+  font-family: var(--font-body);
+}
+.btn:hover { background: #1749c0; transform: translateY(-1px); }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+.about-highlights {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.3rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.highlight-item { display: flex; align-items: flex-start; gap: .85rem; }
+.highlight-icon {
+  width: 34px; height: 34px; flex-shrink: 0;
+  background: var(--accent-soft);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent);
+  font-size: .82rem;
+}
+.highlight-label {
+  font-size: .68rem; color: var(--ink-faint);
+  font-weight: 600; text-transform: uppercase; letter-spacing: .05em;
+}
+.highlight-value { font-size: .85rem; font-weight: 600; color: var(--ink); margin-top: .1rem; }
 
-	</body>
+/* ── SKILLS — CATEGORY GRID ─────────────────────────────── */
+.skills-categories { display: flex; flex-direction: column; gap: 2rem; }
+
+.skill-category-label {
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ink-faint);
+  margin-bottom: .9rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.skill-category-label i { font-size: .7rem; }
+
+.skill-pills { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .38rem .85rem;
+  border-radius: 99px;
+  font-size: .78rem;
+  font-weight: 500;
+  border: 1.5px solid transparent;
+  cursor: default;
+  transition: transform .2s, box-shadow .2s;
+  opacity: 0;
+  transform: translateY(8px);
+}
+.skill-pill.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .4s ease, transform .4s ease, box-shadow .2s, scale .2s;
+}
+.skill-pill:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 14px rgba(0,0,0,.09);
+}
+
+/* colour themes per category */
+.cat-genai .skill-pill  { background: #f0f4ff; border-color: #c7d7fd; color: #3730a3; }
+.cat-ml .skill-pill     { background: #f0fdf4; border-color: #bbf7d0; color: #166534; }
+.cat-frameworks .skill-pill { background: #fff7ed; border-color: #fed7aa; color: #9a3412; }
+.cat-backend .skill-pill  { background: #fdf4ff; border-color: #e9d5ff; color: #7e22ce; }
+.cat-data .skill-pill   { background: #fffbeb; border-color: #fde68a; color: #92400e; }
+.cat-tools .skill-pill  { background: #f0fdfa; border-color: #99f6e4; color: #134e4a; }
+
+/* dot inside pill */
+.pill-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.cat-genai .pill-dot    { background: #6366f1; }
+.cat-ml .pill-dot       { background: #22c55e; }
+.cat-frameworks .pill-dot { background: #f97316; }
+.cat-backend .pill-dot  { background: #a855f7; }
+.cat-data .pill-dot     { background: #eab308; }
+.cat-tools .pill-dot    { background: #14b8a6; }
+
+/* ── PROJECTS ───────────────────────────────────────────── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.2rem;
+}
+.proj-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow .2s, transform .2s;
+  display: flex;
+  flex-direction: column;
+}
+.proj-card:hover {
+  box-shadow: 0 8px 28px rgba(0,0,0,.07);
+  transform: translateY(-3px);
+}
+.proj-thumb {
+  width: 100%; height: 148px;
+  overflow: hidden;
+  background: #e8e5df;
+}
+.proj-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.proj-card:hover .proj-thumb img { transform: scale(1.05); }
+
+/* placeholder banner when no image */
+.proj-thumb-placeholder {
+  width: 100%; height: 148px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
+}
+
+.proj-body { padding: 1.1rem 1.2rem; flex: 1; display: flex; flex-direction: column; }
+.proj-tag {
+  font-size: .65rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--accent);
+  font-family: var(--font-mono);
+  margin-bottom: .4rem;
+}
+.proj-title { font-size: .93rem; font-weight: 700; color: var(--ink); margin-bottom: .4rem; }
+.proj-title a:hover { color: var(--accent); }
+.proj-desc {
+  font-size: .8rem; color: var(--ink-muted); line-height: 1.72; flex: 1;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.proj-link {
+  display: inline-flex; align-items: center; gap: .35rem;
+  margin-top: .85rem; font-size: .75rem; font-weight: 600; color: var(--accent);
+}
+.proj-link:hover { text-decoration: underline; }
+
+/* ── EDUCATION ──────────────────────────────────────────── */
+.edu-timeline { display: flex; flex-direction: column; gap: 0; position: relative; }
+.edu-timeline::before {
+  content: '';
+  position: absolute;
+  left: 17px; top: 24px; bottom: 24px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent) 0%, var(--border) 100%);
+  border-radius: 99px;
+}
+
+.edu-entry {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  padding: 0 0 2.2rem 0;
+  position: relative;
+}
+.edu-entry:last-child { padding-bottom: 0; }
+
+.edu-dot-wrap {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent);
+  font-size: .8rem;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 4px var(--bg);
+}
+.edu-entry.current .edu-dot-wrap {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px rgba(26,86,219,.15);
+  animation: ring-pulse 2.5s infinite;
+}
+@keyframes ring-pulse {
+  0%,100% { box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px rgba(26,86,219,.12); }
+  50%      { box-shadow: 0 0 0 4px var(--bg), 0 0 0 11px rgba(26,86,219,.04); }
+}
+
+.edu-card {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.3rem 1.5rem;
+  transition: box-shadow .2s;
+}
+.edu-card:hover { box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+.edu-entry.current .edu-card {
+  border-color: var(--accent-mid);
+  background: linear-gradient(135deg, #fff 70%, #eff4ff);
+}
+
+.edu-badge {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .22rem .65rem;
+  border-radius: 99px;
+  font-size: .65rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .06em;
+  margin-bottom: .65rem;
+}
+.badge-current { background: var(--accent); color: #fff; }
+.badge-completed { background: var(--green-soft); color: var(--green); }
+
+.edu-degree {
+  font-family: var(--font-head);
+  font-size: 1rem; font-weight: 700; color: var(--ink);
+  margin-bottom: .25rem;
+}
+.edu-field { font-size: .82rem; color: var(--accent); font-weight: 600; margin-bottom: .5rem; }
+.edu-institution { font-size: .82rem; color: var(--ink-muted); margin-bottom: .7rem; }
+.edu-institution i { margin-right: .35rem; font-size: .75rem; }
+.edu-meta-row { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+.edu-meta {
+  display: flex; align-items: center; gap: .35rem;
+  font-size: .74rem; color: var(--ink-faint);
+  font-family: var(--font-mono);
+}
+.edu-meta i { font-size: .72rem; }
+
+.edu-desc {
+  margin-top: .9rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--border-light);
+  font-size: .81rem; color: var(--ink-muted); line-height: 1.75;
+}
+.edu-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .7rem; }
+.edu-tag {
+  padding: .22rem .6rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  font-size: .7rem; color: var(--ink-muted);
+}
+
+/* ── CERTIFICATES ───────────────────────────────────────── */
+.certs-list { display: flex; flex-direction: column; gap: .6rem; }
+.cert-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.2rem;
+  display: flex; align-items: center; gap: 1rem;
+  transition: border-color .18s;
+}
+.cert-card:hover { border-color: var(--accent-mid); }
+.cert-icon {
+  width: 34px; height: 34px; flex-shrink: 0;
+  background: var(--accent-soft);
+  border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent); font-size: .84rem;
+}
+.cert-name { font-size: .85rem; font-weight: 600; color: var(--ink); }
+.cert-meta { font-size: .71rem; color: var(--ink-faint); margin-top: .08rem; font-family: var(--font-mono); }
+.cert-link-btn {
+  margin-left: auto; font-size: .74rem; font-weight: 600; color: var(--accent);
+  white-space: nowrap; flex-shrink: 0; padding: .28rem .7rem;
+  border: 1px solid #dbeafe; border-radius: 5px;
+  background: var(--accent-soft); transition: background .15s;
+}
+.cert-link-btn:hover { background: #dbeafe; }
+
+/* ── CONTACT ────────────────────────────────────────────── */
+.contact-row { display: flex; gap: .7rem; flex-wrap: wrap; }
+.contact-btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .6rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: .8rem; font-weight: 500; color: #444; background: var(--surface);
+  transition: border-color .2s, color .2s;
+}
+.contact-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-highlights { flex-direction: row; flex-wrap: wrap; gap: .8rem; }
+  .highlight-item { flex: 1; min-width: 140px; }
+}
+@media (max-width: 800px) {
+  body { flex-direction: column; }
+  #sidebar {
+    position: static; width: 100%; min-height: auto;
+    flex-direction: row; flex-wrap: wrap; align-items: center;
+    gap: 1rem; padding: 1.2rem 1.5rem;
+    border-right: none; border-bottom: 1px solid var(--border);
+  }
+  .avatar { width: 52px; height: 52px; margin-bottom: 0; }
+  .sidebar-divider, .status-badge { display: none; }
+  .sidebar-nav { flex-direction: row; flex-wrap: wrap; }
+  .sidebar-nav a { padding: .3rem .5rem; font-size: .74rem; }
+  .sidebar-social { margin-top: 0; padding-top: 0; }
+  #main { margin-left: 0; padding: 1.8rem 1.3rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .edu-timeline::before { display: none; }
+  .edu-dot-wrap { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── SIDEBAR ──────────────────────────────────────────── -->
+<aside id="sidebar">
+  <div class="avatar">
+    <img src="images/avatar.jpg" alt="Sumair Rasi"
+         onerror="this.style.display='none'"/>
+  </div>
+  <div>
+    <div class="sidebar-name">Sumair Rasi</div>
+    <div class="sidebar-role">AI / ML Engineer</div>
+    <div class="sidebar-company">MSc · Montanuniversität Leoben</div>
+  </div>
+
+  <div class="status-badge">
+    <span class="status-dot"></span> Open to Part-Time Roles
+  </div>
+
+  <div class="sidebar-divider"></div>
+
+  <nav class="sidebar-nav">
+    <a href="#about"><i class="fa-regular fa-user"></i> About</a>
+    <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+    <a href="#work"><i class="fa-regular fa-folder-open"></i> Projects</a>
+    <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+    <a href="#certificates"><i class="fa-solid fa-certificate"></i> Certificates</a>
+    <a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a>
+  </nav>
+
+  <div class="sidebar-social">
+    <a href="https://github.com/sumairrasi" target="_blank" title="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sumairrasi" target="_blank" title="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sumairrazi585@gmail.com" target="_blank" title="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </div>
+</aside>
+
+<!-- ── MAIN ─────────────────────────────────────────────── -->
+<main id="main">
+
+  <!-- ABOUT -->
+  <div class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div>
+        <p class="about-text">
+          My name is Sumair Rasi, and I am an AI/ML Engineer and Team Lead with 2.5 years of professional
+          experience building and deploying scalable intelligent systems — spanning NLP, Deep Learning,
+          Generative AI, RAG pipelines, Agentic AI, and MLOps.
+          <br/><br/>
+          I have a proven track record of leading cross-functional engineering teams, managing full project
+          lifecycles, and delivering production-ready AI solutions. Currently pursuing my Master's in
+          Industrial Data Science at Montanuniversität Leoben, Austria, and actively seeking a part-time
+          IT role to apply my hands-on expertise in the local market.
+        </p>
+        <a href="https://drive.google.com/file/d/1GuLNOZ6ECzDGLd4hTGsEWn2cPr3sH44d/view?usp=drive_link"
+           target="_blank" class="btn">
+          <i class="fa-solid fa-file-lines"></i> View Resume
+        </a>
+      </div>
+
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div>
+            <div class="highlight-label">Experience</div>
+            <div class="highlight-value">2.5 Years · ML Engineer</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <div class="highlight-label">Currently Studying</div>
+            <div class="highlight-value">MSc Industrial Data Science</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div class="highlight-label">Location</div>
+            <div class="highlight-value">Leoben, Austria</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div>
+            <div class="highlight-label">Focus Areas</div>
+            <div class="highlight-value">Generative AI · RAG · MLOps</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-brands fa-aws"></i></div>
+          <div>
+            <div class="highlight-label">Cloud & Infra</div>
+            <div class="highlight-value">AWS · Docker · CI/CD</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-brands fa-github"></i></div>
+          <div>
+            <div class="highlight-label">Open Source</div>
+            <div class="highlight-value"><a href="https://github.com/sumairrasi" target="_blank" style="color:var(--accent)">github.com/sumairrasi</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-categories">
+
+      <div class="cat-genai">
+        <div class="skill-category-label"><i class="fa-solid fa-robot"></i> Generative AI &amp; LLMs</div>
+        <div class="skill-pills" id="pills-genai">
+          <span class="skill-pill"><span class="pill-dot"></span>LLMs</span>
+          <span class="skill-pill"><span class="pill-dot"></span>RAG Pipelines</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Prompt Engineering</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Agentic AI</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Fine-tuning</span>
+          <span class="skill-pill"><span class="pill-dot"></span>PEFT</span>
+          <span class="skill-pill"><span class="pill-dot"></span>LLM Tool Calling</span>
+          <span class="skill-pill"><span class="pill-dot"></span>MCP</span>
+          <span class="skill-pill"><span class="pill-dot"></span>AI Agents</span>
+          <span class="skill-pill"><span class="pill-dot"></span>OpenAI API</span>
+        </div>
+      </div>
+
+      <div class="cat-ml">
+        <div class="skill-category-label"><i class="fa-solid fa-brain"></i> ML &amp; Computer Vision</div>
+        <div class="skill-pills" id="pills-ml">
+          <span class="skill-pill"><span class="pill-dot"></span>Machine Learning</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Deep Learning</span>
+          <span class="skill-pill"><span class="pill-dot"></span>NLP</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Transformers</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Computer Vision</span>
+          <span class="skill-pill"><span class="pill-dot"></span>OCR</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Anomaly Detection</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Time-Series Forecasting</span>
+        </div>
+      </div>
+
+      <div class="cat-frameworks">
+        <div class="skill-category-label"><i class="fa-solid fa-cubes"></i> Frameworks &amp; Libraries</div>
+        <div class="skill-pills" id="pills-frameworks">
+          <span class="skill-pill"><span class="pill-dot"></span>PyTorch</span>
+          <span class="skill-pill"><span class="pill-dot"></span>TensorFlow</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Hugging Face</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Scikit-learn</span>
+          <span class="skill-pill"><span class="pill-dot"></span>LangChain</span>
+          <span class="skill-pill"><span class="pill-dot"></span>LangGraph</span>
+          <span class="skill-pill"><span class="pill-dot"></span>CrewAI</span>
+          <span class="skill-pill"><span class="pill-dot"></span>OpenCV</span>
+        </div>
+      </div>
+
+      <div class="cat-backend">
+        <div class="skill-category-label"><i class="fa-solid fa-server"></i> Backend &amp; DevOps</div>
+        <div class="skill-pills" id="pills-backend">
+          <span class="skill-pill"><span class="pill-dot"></span>Python</span>
+          <span class="skill-pill"><span class="pill-dot"></span>FastAPI</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Flask</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Django</span>
+          <span class="skill-pill"><span class="pill-dot"></span>REST APIs</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Docker</span>
+          <span class="skill-pill"><span class="pill-dot"></span>GitHub Actions CI/CD</span>
+          <span class="skill-pill"><span class="pill-dot"></span>MLOps</span>
+        </div>
+      </div>
+
+      <div class="cat-data">
+        <div class="skill-category-label"><i class="fa-solid fa-database"></i> Databases &amp; Cloud</div>
+        <div class="skill-pills" id="pills-data">
+          <span class="skill-pill"><span class="pill-dot"></span>PostgreSQL</span>
+          <span class="skill-pill"><span class="pill-dot"></span>MongoDB</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Neo4j</span>
+          <span class="skill-pill"><span class="pill-dot"></span>ChromaDB</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Qdrant</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Redis</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Amazon S3</span>
+          <span class="skill-pill"><span class="pill-dot"></span>AWS EC2</span>
+        </div>
+      </div>
+
+      <div class="cat-tools">
+        <div class="skill-category-label"><i class="fa-solid fa-wrench"></i> Tools &amp; Model Serving</div>
+        <div class="skill-pills" id="pills-tools">
+          <span class="skill-pill"><span class="pill-dot"></span>Git &amp; GitHub</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Linux</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Ollama</span>
+          <span class="skill-pill"><span class="pill-dot"></span>vLLM</span>
+          <span class="skill-pill"><span class="pill-dot"></span>Jupyter</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section" id="work">
+    <h2 class="section-title">Recent Work</h2>
+    <div class="projects-grid">
+
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="images/thumbs/chatbot-drupal.webp" alt="Research Bot"
+               onerror="this.parentNode.style.background='#e8e5df';this.style.display='none'"/>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">LangChain · Agentic AI</div>
+          <div class="proj-title"><a href="https://github.com/sumairrasi/Research-Bot" target="_blank">Research-Bot</a></div>
+          <p class="proj-desc">AI-powered platform for interactive learning using LangChain agents, Redis, Wikipedia, and ArXiv. Teachers upload papers; students explore through dynamic Q&amp;A.</p>
+          <a href="https://github.com/sumairrasi/Research-Bot" target="_blank" class="proj-link">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="images/thumbs/Mental-Health.jpg" alt="Mental Health Assessment"
+               onerror="this.parentNode.style.background='#e8e5df';this.style.display='none'"/>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">MLOps · AWS EC2</div>
+          <div class="proj-title"><a href="https://github.com/sumairrasi/Mental-Health-Assesment" target="_blank">Mental Health Assessment</a></div>
+          <p class="proj-desc">ML system detecting workplace mental health challenges. Provides early warnings and personalized interventions. Deployed end-to-end on Amazon EC2 with S3 storage.</p>
+          <a href="https://github.com/sumairrasi/Mental-Health-Assesment" target="_blank" class="proj-link">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="images/thumbs/diary.jpg" alt="Dairy Farm Forecast"
+               onerror="this.parentNode.style.background='#e8e5df';this.style.display='none'"/>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">Time-Series · SARIMAX</div>
+          <div class="proj-title"><a href="https://github.com/sumairrasi/Diary-Farm-production-Forcast" target="_blank">Dairy Farm Production Forecast</a></div>
+          <p class="proj-desc">Uses SARIMAX to forecast dairy farm production from historical data and external factors. Built end-to-end with CI/CD via GitHub Actions.</p>
+          <a href="https://github.com/sumairrasi/Diary-Farm-production-Forcast" target="_blank" class="proj-link">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <img src="images/thumbs/sentiment.jpg" alt="Sentiment Analysis"
+               onerror="this.parentNode.style.background='#e8e5df';this.style.display='none'"/>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">NLP · DistilBERT · Docker</div>
+          <div class="proj-title"><a href="https://github.com/sumairrasi/Sentiment-Analysis-using-Twitter-data" target="_blank">Sentiment Analysis — Twitter Data</a></div>
+          <p class="proj-desc">Fine-tuned DistilBERT on a Kaggle Twitter dataset to classify sentiments. Implemented end-to-end with advanced NLP and deployed with Docker.</p>
+          <a href="https://github.com/sumairrasi/Sentiment-Analysis-using-Twitter-data" target="_blank" class="proj-link">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-timeline">
+
+      <!-- MSc — current -->
+      <div class="edu-entry current">
+        <div class="edu-dot-wrap"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="edu-card">
+          <div class="edu-badge badge-current"><i class="fa-solid fa-circle-dot"></i> Currently Enrolled</div>
+          <div class="edu-degree">Master of Science</div>
+          <div class="edu-field">Industrial Data Science</div>
+          <div class="edu-institution"><i class="fa-solid fa-building-columns"></i> Montanuniversität Leoben, Austria</div>
+          <div class="edu-meta-row">
+            <span class="edu-meta"><i class="fa-regular fa-calendar"></i> 2026 – Present</span>
+            <span class="edu-meta"><i class="fa-solid fa-location-dot"></i> Leoben, Styria</span>
+          </div>
+          <div class="edu-desc">
+            Advancing expertise in data science applied to industrial and engineering contexts — covering machine learning
+            for process optimization, predictive maintenance, industrial IoT analytics, and intelligent automation.
+          </div>
+          <div class="edu-tags">
+            <span class="edu-tag">Industrial IoT</span>
+            <span class="edu-tag">Predictive Maintenance</span>
+            <span class="edu-tag">Data Science</span>
+            <span class="edu-tag">Process Optimization</span>
+            <span class="edu-tag">Applied ML</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- B.Tech — completed -->
+      <div class="edu-entry">
+        <div class="edu-dot-wrap"><i class="fa-solid fa-check"></i></div>
+        <div class="edu-card">
+          <div class="edu-badge badge-completed"><i class="fa-solid fa-circle-check"></i> Completed</div>
+          <div class="edu-degree">Bachelor of Technology</div>
+          <div class="edu-field">Computer Science &amp; Engineering</div>
+          <div class="edu-institution"><i class="fa-solid fa-building-columns"></i> A.P.J. Abdul Kalam Technological University, India</div>
+          <div class="edu-meta-row">
+            <span class="edu-meta"><i class="fa-regular fa-calendar"></i> May 2018 – Aug 2022</span>
+            <span class="edu-meta"><i class="fa-solid fa-star"></i> Grade: 69.4%</span>
+          </div>
+          <div class="edu-desc">
+            <strong>Thesis:</strong> Violence Detection using Computer Vision — built using Deep Learning, OpenCV, and PyTorch
+            to automatically detect violent events in video streams.<br/><br/>
+            <strong>Core Coursework:</strong> Algorithms &amp; Data Structures, Mathematics, Statistics, Machine Learning, Database Design.
+          </div>
+          <div class="edu-tags">
+            <span class="edu-tag">Computer Vision</span>
+            <span class="edu-tag">Deep Learning</span>
+            <span class="edu-tag">PyTorch</span>
+            <span class="edu-tag">OpenCV</span>
+            <span class="edu-tag">Algorithms</span>
+            <span class="edu-tag">Statistics</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CERTIFICATES -->
+  <div class="section" id="certificates">
+    <h2 class="section-title">Certificates</h2>
+    <div class="certs-list">
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+        <div><div class="cert-name">Databases &amp; SQL for Data Science with Python</div><div class="cert-meta">IBM · 2024</div></div>
+        <a href="https://drive.google.com/file/d/1C_bMBY1kJU-5GB5VzdG2PfsI59UKfR4E/view?usp=sharing" target="_blank" class="cert-link-btn">View ↗</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+        <div><div class="cert-name">Django Web Framework</div><div class="cert-meta">Meta · 2024</div></div>
+        <a href="https://drive.google.com/file/d/1x1WWJTSMSPVED8V-zN9RGC8x_XKblTfh/view?usp=sharing" target="_blank" class="cert-link-btn">View ↗</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-solid fa-chart-bar"></i></div>
+        <div><div class="cert-name">Statistics Foundation: 3</div><div class="cert-meta">LinkedIn Learning · 2022</div></div>
+        <a href="https://www.linkedin.com/learning/certificates/142bf862ecc7f2580068443aad0d8f1009bbcb8431a8883e36e07c840ead395f" target="_blank" class="cert-link-btn">View ↗</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+        <div><div class="cert-name">Machine Learning Foundation</div><div class="cert-meta">iNeuron · 2022</div></div>
+        <a href="https://drive.google.com/file/d/1rdJoGIFH3tWRBXVkW-FWbovrCOVBOQru/view" target="_blank" class="cert-link-btn">View ↗</a>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-solid fa-microchip"></i></div>
+        <div><div class="cert-name">Deep Learning Foundation</div><div class="cert-meta">iNeuron · 2022</div></div>
+        <a href="https://drive.google.com/file/d/18qG1xzDrcR0vdZCW9Klhi6SE6-81kFj_/view" target="_blank" class="cert-link-btn">View ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-row">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sumairrazi585@gmail.com" target="_blank" class="contact-btn">
+        <i class="fa-solid fa-envelope"></i> Email Me
+      </a>
+      <a href="https://www.linkedin.com/in/sumairrasi" target="_blank" class="contact-btn">
+        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+      </a>
+      <a href="https://github.com/sumairrasi" target="_blank" class="contact-btn">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a href="tel:+4367763858085" class="contact-btn">
+        <i class="fa-solid fa-phone"></i> +43 67763858085
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<script>
+// Active nav on scroll
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.sidebar-nav a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+  });
+}, { passive: true });
+
+// Staggered skill pill entrance animation
+const pillGroups = document.querySelectorAll('.skill-pills');
+const pillObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const pills = entry.target.querySelectorAll('.skill-pill');
+      pills.forEach((pill, i) => {
+        setTimeout(() => pill.classList.add('visible'), i * 55);
+      });
+      pillObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+pillGroups.forEach(g => pillObs.observe(g));
+</script>
+</body>
 </html>
